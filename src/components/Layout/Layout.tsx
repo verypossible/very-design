@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Normalize } from "styled-normalize";
 
 import { Footer } from "../Footer";
 import { Header } from "../Header";
@@ -20,6 +21,7 @@ const Main = styled.main`
 const Layout: React.FC<LayoutProps> = ({ children }: LayoutProps) => {
   return (
     <>
+      <Normalize />
       <Header />
       <Main>{children}</Main>
       <Footer />
