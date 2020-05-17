@@ -8,7 +8,9 @@ interface HeaderProps {
   children?: React.ReactNode;
 }
 
-const Layout = styled.header`
+const Layout = styled.header.attrs({
+  role: "banner",
+})`
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;

@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-const Layout = styled.footer`
+const Layout = styled.footer.attrs({
+  role: "contentinfo",
+})`
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
